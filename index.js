@@ -1,12 +1,14 @@
-
-function receivesAFunction(otherFunction){
-    return otherFunction()
+// Code your solution in this file!
+function receivesAFunction(callback) {
+    callback()
 }
-function returnsANamedFunction() {
-    return function age() {
-        return "Ths is age"
+function returnsANamedFunction(){
+    return function named(){
+        console.log()
     }
 }
-function returnsAnAnonymousFunction() {
-    return () => "This is an anonymous function"
+function returnsAnAnonymousFunction(){
+    return function(){
+        console.log
+    }
 }
